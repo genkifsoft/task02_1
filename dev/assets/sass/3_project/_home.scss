@@ -1,0 +1,98 @@
+.p-home{
+    .p-home1{
+        @include breakpoint(sp){
+            margin-top: 25px;
+        }
+    }
+    .p-home2{
+        background-color: #fff3e1;
+        position: relative;
+        .l-container{
+            @include breakpoint(sp){
+                display: contents;
+            }
+            display: flex;
+            padding: 50px 0px;
+        }
+        .c-info{
+            p{
+                line-height: 3rem;
+                margin-bottom: 10px;
+                @include breakpoint(sp){
+                    padding-bottom: 35px;
+                }
+            }
+            @include breakpoint(sp){
+                font-size: 1.8rem;
+            }
+            padding: 30px 40px 40px 40px;
+        }
+        @include breakpoint(sp){
+            .c-title{
+                padding: 35px 0px 20px 0px;
+                h1{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .p-home3{
+        background-color: #ff9c46;
+        padding: 50px;
+        position: relative;
+        .l-container{
+            @include breakpoint(sp){
+                display: inline;
+            }
+            h1{
+                text-align: center;
+                display: block;
+            }
+        }
+        .c-list{
+            display: flex;
+            margin-top: 10px;
+            justify-content: space-between;
+            @include breakpoint(sp){
+                display: block;
+                margin-bottom: 70px;
+            }
+            &__img{
+                width: 80px;
+                @include breakpoint(sp){
+                    width: 160px;
+                    height: 163px;
+                    img{
+                        height: 100%;
+                    }
+                }
+                float: left;
+            }
+            &__info{
+                padding: 20px;
+                background-color: #fff3e1;
+                @include breakpoint(sp){
+                    width: 100%;
+                }
+            }
+            &__card{
+                display: inline-flex;
+                margin-bottom: 15px;
+                @include breakpoint(sp){
+                    display: flex;
+                }
+            }
+            margin-bottom: 30px;
+        }
+        .c-title__product{
+            display: flex;
+            margin-top: 40px;
+            align-items: center;
+            text-align: center;
+            h3{
+                text-decoration: underline;
+                width: 33.33%;
+            }
+        }
+    }
+}

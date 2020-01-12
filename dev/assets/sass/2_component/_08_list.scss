@@ -1,0 +1,87 @@
+/*------------------------------------------------------------
+list
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-list{
+    display: flex;
+    flex-wrap: wrap;
+    &__card{
+        position: relative;
+    }
+    &--col2 > .c-list__card{
+        flex: 0 0 50%;
+        width: 50%;
+        @include breakpoint(sp){
+            flex: 0 0 100%;
+            width: 100%;
+        }
+    }
+    &__img{
+        img{
+            @include breakpoint(sp){
+                height: 563px;
+                // width: 160px;
+                // height: 163px;  
+            }
+        }
+        position: relative;
+    }
+    &__inner{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        margin: auto;
+        padding: 35px;
+    }
+    &__text{
+        @include breakpoint(sp){
+            background-color: #f9f8f7;
+            opacity: 0.8;
+            margin: 65px;
+            height: 70%;
+            text-align: center;
+            position: relative;
+        }
+        background-color: #f9f8f7;
+        opacity: 0.8;
+        // margin: 55px 95px;
+        padding: 45px;
+        height: 100%;
+        position: relative;
+        h4{
+            color: $momentum;
+            font-weight: bold;
+            font-family: "Muli";
+            @include breakpoint(sp){
+                line-height: 6.5rem;
+                font-size: 2.5rem;
+            }
+        }
+        @include breakpoint(sp){
+            h1{
+                line-height: 5.3rem;
+                font-size: 3.3rem;
+                padding-bottom: 14px;
+                margin-bottom: 40px;
+            }
+        }
+        h1{
+            line-height: 3.3rem;
+            font-size: 2.3rem;
+            padding-bottom: 10px;
+        }
+        img{
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            width: 70px;
+        }
+        .c-list__button{
+            border: 1px solid $strongMomentum;
+        }
+    }
+}

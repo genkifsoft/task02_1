@@ -1,0 +1,29 @@
+/*------------------------------------------------------------
+sidebar
+------------------------------------------------------------*/
+.c-sidebar{
+    height: 100vh;
+    padding: 20px;
+    position: relative;
+    img{
+        @include breakpoint(sp){
+            height: 100vh;
+        }
+    }
+    &__inner{
+        color: #fff;
+        left: 0; 
+        right: 0;
+        top: 40%;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        h3{
+            font-size: 3.6rem;
+            padding: 10px 0px;
+        }
+        h4{
+            font-weight: bold;
+        }
+    }
+}

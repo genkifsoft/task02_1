@@ -1,0 +1,23 @@
+/*------------------------------------------------------------
+navi
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-navi{
+    padding-top: 40px;
+    ul{
+        display: flex;
+        font-family: "Muli";
+        justify-content: center;
+        align-items: center;
+    }
+    &--item{
+        padding-right: 25px;
+        text-transform: uppercase;
+    }
+    &__social{
+        margin-right: 15px;
+        width: 40px;
+    }
+}
