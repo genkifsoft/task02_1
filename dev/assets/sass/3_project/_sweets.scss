@@ -1,0 +1,140 @@
+.p-sweets{
+    .p-sweets1{
+        margin-top: 87px;
+        margin-left: 10px;
+        .l-container{
+            display: block;
+        }
+        .c-list1{
+            &__card:last-child{
+                .c-list1__img{
+                    width: 570px;
+                }
+            }
+        }
+        .c-sweet1__titleSp{
+            @include breakpoint(sp){
+                margin: auto;
+                height: 95px;
+            }
+        }
+    }
+    .p-sweets2{
+        background-color: #fafafa;
+        .l-container{
+            display: block;
+        }
+        .c-list{
+            &__card{
+                .c-list1__img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                    @include breakpoint(sp){
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .c-list{
+        &__inner{
+            background-color: #fafafa;
+            padding: 0px;
+            position: relative;
+        }
+        &__text{
+            @include breakpoint(sp){
+                margin: 0px;
+            }
+            background-color: #fafafa;
+            @include breakpoint(sp){
+                h4{
+                    text-align: left;
+                }
+            }
+            h4:after{
+                content: "";
+                display: block;
+                padding-bottom: 10px;
+                text-decoration: dashed;
+                margin-bottom: 10px;
+                width: 100%;
+                border-bottom: 1px #642200 dashed;
+            }
+            p{
+                line-height: 3.3rem;
+            }
+        }
+    }
+    .p-sweets3{
+        .l-container{
+            display: block;
+            margin-bottom: 50px;
+            @include breakpoint(sp){
+                width: 590px;
+            }
+        }
+        .c-list{
+            @include breakpoint(sp){
+                display: block;
+            }
+            padding-bottom: 50px;
+            justify-content: space-between;
+            &__card{
+                @include breakpoint(sp){
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                flex: 0 0 32%;
+                padding: 20px;
+                width: 32%;
+                border: 1px solid #cccccc;
+                box-sizing: border-box;
+                img{
+                    @include breakpoint(sp){
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+            }
+            &__info{
+                padding: 15px;
+                h5{
+                    color: #642200;
+                    font-size: 1.6rem;
+                }
+                h5:after{
+                    content: "";
+                    display: inline-block;
+                    border-bottom: 1px #cdcdcd dashed;
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+            &__img{
+                text-align: center;
+                margin: 15px 0px;
+                img{
+                    width: 70px;
+                }
+            }
+        }
+    }
+}
+.c-sweets__title{
+    font-size: 3.6rem;
+    font-family: "Yu Mincho";
+    color: rgb(100, 34, 0);
+    line-height: 1.5;
+    text-align: center;
+    margin: 30px 0px;
+    img{
+        margin: auto;
+    }
+    @include breakpoint(sp){
+        padding-top: 30px;
+        margin-left: -11px;
+    }
+}

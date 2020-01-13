@@ -84,4 +84,104 @@ list
             border: 1px solid $strongMomentum;
         }
     }
+    &__sweet{
+        margin: 100px;
+    }
+}
+.c-list1{
+    display: flex;
+    flex-wrap: wrap;
+    &--col2 {
+        padding: 19px 0px;
+    }
+    &__card{
+        display: flex;
+        margin-bottom: 70px;
+        @include breakpoint(sp){
+            margin-bottom: 7px;
+            flex-flow: column;
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    &__reverse{
+        @include breakpoint(sp){
+            flex-direction: column;
+            .c-list1__img{
+                img{
+                    margin-top: -90px;
+                    padding: 35px;
+                }
+            }
+        }
+    }
+    &__inner{
+        margin-right: 30px;
+        @include breakpoint(sp){
+            padding-top: 40px;
+            margin-right: 0px;
+        }
+    }
+    &__img{
+        width: 500px;
+        @include breakpoint(sp){
+            margin: auto;
+            padding: 45px 100px;
+        }
+        img{
+            width: 500px;
+        }
+    }
+    &__text{
+        @include breakpoint(sp){
+            margin-top: -63px;
+        }
+        h4{
+            font-size: 1.6rem;
+            @include breakpoint(sp){
+                font-size: 3.1rem;
+                margin-top: -20px;
+                line-height: 5.9rem;
+            }
+            font-family: "Yu Gothic";
+            color: rgb(100, 34, 0);
+            font-weight: bold;
+            line-height: 2rem;
+            margin-bottom: 10px;
+        }
+        p{
+            @include breakpoint(sp){
+                font-size: 1.8rem;
+                line-height: 5.4rem;
+            }
+            font-size: 1.4rem;
+            font-family: "Yu Gothic";
+            color: rgb(0, 0, 0);
+            line-height: 2.143;
+        }
+        @include breakpoint(sp){
+            margin-bottom: 210px;
+        }
+        margin-bottom: 55px;
+    }
+    &--leftMargin30{
+        @include breakpoint(sp){
+            margin-left: 0px;
+        }
+        margin-left: 60px;
+    }
+    &--rightMargin30{
+        @include breakpoint(sp){
+            margin-right: 0px;
+        }
+        margin-right: -60px;
+    }
+}
+.line{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 70px;
 }

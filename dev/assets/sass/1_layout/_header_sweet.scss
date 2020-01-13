@@ -1,0 +1,70 @@
+/* Header
+------------------------------------------------------------*/
+.c-header1{
+    // max-height: 520px;
+    margin: 0 auto;
+    .c-sidebar1{
+        @include breakpoint(sp){
+            position: relative;
+            .c-logo{
+                position: absolute;
+                width: 233px;
+                height: 262px;
+                top: 234px;
+                left: 259px;
+            }
+        }
+        img{
+            @include breakpoint(sp){
+                height: 725px;
+                width: 100%;
+            }
+            height: 520px;
+            width: 100%;
+        }
+        &__inner{
+            @include breakpoint(sp){
+                position: absolute;
+                top: 0px;
+            }
+            color: #fff;
+            left: 0;
+            right: 0;
+            top: 117px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            padding-left: 10px;
+            nav.c-navi{
+                margin-left: 10px;
+                padding-top: 80px;
+            }
+            .c-navi{
+                &--item{
+                    padding-right: 50px;
+                }
+                &--item:first-child{
+                    margin-left: 35px;
+                }
+                @include breakpoint(sp){
+                    ul > .c-navi--item:first-child{
+                        display: block;
+                        margin-left: -5px;
+                    }
+                    ul{
+                        display: block;
+                        li{
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .c-navi__social{
+                        margin: auto;
+                        li{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -12,18 +12,18 @@ $(document).ready( function(){
             }
         }
     });
-
-    $('.c-btn--menu').on('click', function() {
+    $(this).find('._close').hide();
+    $('.btn--menu').on('click', function() {
         $(this).toggleClass('is-open');
         if($(this).hasClass('is-open')) {
-          $(this).find('._open').hide();
-          $(this).find('._close').show();
-        //   $(".c-menu").addClass("c-menu--layout");
+            $(this).find('._open').hide();
+            $(this).find('._close').show();
+            $(".c-navi").removeClass("is-close");
         } else {
-          $(this).find('._open').show();
-          $(this).find('._close').hide();
+            $(this).find('._open').show();
+            $(this).find('._close').hide();
+            $(".c-navi").addClass("is-close");
         }
-
-        $('.c-menu').toggleClass('is-open');
+        $('.c-navi').toggleClass('is-open');
     });
 })

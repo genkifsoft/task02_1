@@ -21,6 +21,7 @@ btn
     }
     display: flex;
     a{
+        
         @include breakpoint(sp){
             padding: 0px;
             display: block;
@@ -29,7 +30,8 @@ btn
             background-color: $strongMomentum;
         }
         border: 1px solid $strongMomentum;
-        padding: 5px 60px;
+        padding: 5px 75px;
+        // padding: 5px 60px;
     }
     &:hover{
         a{
@@ -39,6 +41,9 @@ btn
     }
     &--momentum{
         a{
+            @include breakpoint(sp){
+                padding: 15px;
+            }
             color: #fff;
             background-color: $strongMomentum;
         }
@@ -57,10 +62,19 @@ btn
 }
 .btn--menu{
     position: absolute;
-    top: -215px;
+    top: -340px;
     right: 0px;
     width: 40px;
-    right: 20px;
+    right: 30px;
+    @include breakpoint(sp){
+        // top: 26px;
+        right: 30px;
+    }
+}
+.btn--sweet{
+    @include breakpoint(sp){
+        top: 26px;
+    }
 }
 .c-text{
     &--center{
@@ -68,4 +82,7 @@ btn
         text-align: center;
         margin-bottom: 20px;
     }
+}
+.c-btn--center{
+    margin: auto;
 }
